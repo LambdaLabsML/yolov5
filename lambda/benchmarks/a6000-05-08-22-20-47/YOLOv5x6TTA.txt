@@ -1,0 +1,595 @@
+[34m[1mbenchmarks: [0mweights=yolov5x6.pt, imgsz=1280, batch_size=1, data=/home/ubuntu/data/repos/yolov5/data/coco128.yaml, device=0, half=False, test=False, pt_only=False
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5x6 summary: 574 layers, 140730220 parameters, 0 gradients, 209.8 GFLOPs
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m
+               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.
+                 all        128        929      0.863      0.771      0.866      0.687
+Speed: 0.6ms pre-process, 47.5ms inference, 1.4ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp201[0m
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5x6 summary: 574 layers, 140730220 parameters, 0 gradients, 209.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5x6.pt with output shape (1, 102000, 85) (269.6 MB)
+
+[34m[1mTorchScript:[0m starting export with torch 1.10.1+cu113...
+[34m[1mTorchScript:[0m export success, saved as yolov5x6.torchscript (538.4 MB)
+
+Export complete (5.30s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5x6.torchscript
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5x6.torchscript')
+Validate:        python val.py --weights yolov5x6.torchscript
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5x6.torchscript for TorchScript inference...
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m
+               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.
+                 all        128        929      0.863      0.771      0.866      0.687
+Speed: 0.7ms pre-process, 47.4ms inference, 1.3ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp202[0m
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5x6 summary: 574 layers, 140730220 parameters, 0 gradients, 209.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5x6.pt with output shape (1, 102000, 85) (269.6 MB)
+
+[34m[1mONNX:[0m starting export with onnx 1.11.0...
+[34m[1mONNX:[0m export success, saved as yolov5x6.onnx (538.5 MB)
+
+Export complete (13.97s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5x6.onnx
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5x6.onnx')
+Validate:        python val.py --weights yolov5x6.onnx
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5x6.onnx for ONNX Runtime inference...
+Forcing --batch-size 1 square inference (1,3,1280,1280) for non-PyTorch models
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m
+               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.
+                 all        128        929      0.863      0.771      0.866      0.687
+Speed: 0.5ms pre-process, 77.4ms inference, 1.4ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp203[0m
+WARNING: Benchmark failure for OpenVINO: OpenVINO inference not supported on GPU
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5x6 summary: 574 layers, 140730220 parameters, 0 gradients, 209.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5x6.pt with output shape (1, 102000, 85) (269.6 MB)
+[31m[1mrequirements:[0m nvidia-tensorrt not found and is required by YOLOv5, attempting auto-update...
+Looking in indexes: https://pypi.ngc.nvidia.com
+Collecting nvidia-tensorrt
+  Using cached https://developer.download.nvidia.com/compute/redist/nvidia-tensorrt/nvidia_tensorrt-8.4.0.6-cp38-none-linux_x86_64.whl (782.5 MB)
+Processing /home/ubuntu/.cache/pip/wheels/82/ec/00/43dca28fa09df9fd9db0e07b91254b91b81510f57cbdbb2b1d/nvidia_cuda_runtime_cu11-2021.12.20-py3-none-any.whl
+Processing /home/ubuntu/.cache/pip/wheels/12/4e/b2/0e834ef2d0845962330bcb60f04b2503cf68565c6816ddde0b/nvidia_cudnn_cu11-2022.4.2-py3-none-any.whl
+Processing /home/ubuntu/.cache/pip/wheels/eb/aa/74/b54b6020d7c54ef89130aef7b4d9c2cd82a199c02be5a168ad/nvidia_cublas_cu11-2022.3.24-py3-none-any.whl
+Collecting nvidia-cuda-runtime-cu116
+  Using cached https://developer.download.nvidia.com/compute/redist/nvidia-cuda-runtime-cu116/nvidia_cuda_runtime_cu116-11.6.55-py3-none-manylinux1_x86_64.whl (839 kB)
+Collecting nvidia-cudnn-cu115
+  Using cached https://developer.download.nvidia.com/compute/redist/nvidia-cudnn-cu115/nvidia_cudnn_cu115-8.3.3.40-py3-none-manylinux1_x86_64.whl (729.6 MB)
+Collecting nvidia-cublas-cu116
+  Using cached https://developer.download.nvidia.com/compute/redist/nvidia-cublas-cu116/nvidia_cublas_cu116-11.9.2.110-py3-none-manylinux1_x86_64.whl (334.6 MB)
+Requirement already satisfied, skipping upgrade: wheel in /home/ubuntu/data/envs/venv-yolov5/lib/python3.8/site-packages (from nvidia-cuda-runtime-cu116->nvidia-cuda-runtime-cu11->nvidia-tensorrt) (0.34.2)
+Requirement already satisfied, skipping upgrade: setuptools in /home/ubuntu/data/envs/venv-yolov5/lib/python3.8/site-packages (from nvidia-cuda-runtime-cu116->nvidia-cuda-runtime-cu11->nvidia-tensorrt) (44.0.0)
+Installing collected packages: nvidia-cuda-runtime-cu116, nvidia-cuda-runtime-cu11, nvidia-cudnn-cu115, nvidia-cudnn-cu11, nvidia-cublas-cu116, nvidia-cublas-cu11, nvidia-tensorrt
+Successfully installed nvidia-cublas-cu11-2022.3.24 nvidia-cublas-cu116-11.9.2.110 nvidia-cuda-runtime-cu11-2021.12.20 nvidia-cuda-runtime-cu116-11.6.55 nvidia-cudnn-cu11-2022.4.2 nvidia-cudnn-cu115-8.3.3.40 nvidia-tensorrt-8.4.0.6
+
+[31m[1mrequirements:[0m 1 package updated per ['nvidia-tensorrt']
+[31m[1mrequirements:[0m ⚠️ [1mRestart runtime or rerun command for updates to take effect[0m
+
+
+[34m[1mONNX:[0m starting export with onnx 1.11.0...
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+[34m[1mONNX:[0m export success, saved as yolov5x6.onnx (538.5 MB)
+
+[34m[1mTensorRT:[0m starting export with TensorRT 8.4.0.6...
+[05/08/2022-20:50:06] [TRT] [I] [MemUsageChange] Init CUDA: CPU +348, GPU +0, now: CPU 7024, GPU 8333 (MiB)
+[05/08/2022-20:50:07] [TRT] [I] [MemUsageSnapshot] Begin constructing builder kernel library: CPU 7044 MiB, GPU 8333 MiB
+[05/08/2022-20:50:07] [TRT] [I] [MemUsageSnapshot] End constructing builder kernel library: CPU 7418 MiB, GPU 8457 MiB
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:604] Reading dangerously large protocol message.  If the message turns out to be larger than 2147483647 bytes, parsing will be halted for security reasons.  To increase the limit (or to disable these warnings), see CodedInputStream::SetTotalBytesLimit() in google/protobuf/io/coded_stream.h.
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:81] The total number of bytes read was 564617593
+[05/08/2022-20:50:13] [TRT] [I] ----------------------------------------------------------------
+[05/08/2022-20:50:13] [TRT] [I] Input filename:   yolov5x6.onnx
+[05/08/2022-20:50:13] [TRT] [I] ONNX IR version:  0.0.7
+[05/08/2022-20:50:13] [TRT] [I] Opset version:    13
+[05/08/2022-20:50:13] [TRT] [I] Producer name:    pytorch
+[05/08/2022-20:50:13] [TRT] [I] Producer version: 1.10
+[05/08/2022-20:50:13] [TRT] [I] Domain:           
+[05/08/2022-20:50:13] [TRT] [I] Model version:    0
+[05/08/2022-20:50:13] [TRT] [I] Doc string:       
+[05/08/2022-20:50:13] [TRT] [I] ----------------------------------------------------------------
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:604] Reading dangerously large protocol message.  If the message turns out to be larger than 2147483647 bytes, parsing will be halted for security reasons.  To increase the limit (or to disable these warnings), see CodedInputStream::SetTotalBytesLimit() in google/protobuf/io/coded_stream.h.
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:81] The total number of bytes read was 564617593
+[05/08/2022-20:50:13] [TRT] [W] onnx2trt_utils.cpp:365: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+[34m[1mTensorRT:[0m Network Description:
+[34m[1mTensorRT:[0m	input "images" with shape (1, 3, 1280, 1280) and dtype DataType.FLOAT
+[34m[1mTensorRT:[0m	output "output" with shape (1, 102000, 85) and dtype DataType.FLOAT
+[34m[1mTensorRT:[0m building FP16 engine in yolov5x6.engine
+[05/08/2022-20:50:15] [TRT] [W] TensorRT was linked against cuBLAS/cuBLAS LT 11.8.0 but loaded cuBLAS/cuBLAS LT 110.9.2
+[05/08/2022-20:50:15] [TRT] [I] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 7999, GPU 8465 (MiB)
+[05/08/2022-20:50:15] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 8000, GPU 8475 (MiB)
+[05/08/2022-20:50:15] [TRT] [W] TensorRT was linked against cuDNN 8.3.2 but loaded cuDNN 8.1.1
+[05/08/2022-20:50:15] [TRT] [I] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[05/08/2022-20:53:18] [TRT] [I] Some tactics do not have sufficient workspace memory to run. Increasing workspace size will enable more tactics, please check verbose output for requested sizes.
+[05/08/2022-21:02:24] [TRT] [I] Detected 1 inputs and 5 output network tensors.
+[05/08/2022-21:02:28] [TRT] [I] Total Host Persistent Memory: 433280
+[05/08/2022-21:02:28] [TRT] [I] Total Device Persistent Memory: 6284288
+[05/08/2022-21:02:28] [TRT] [I] Total Scratch Memory: 0
+[05/08/2022-21:02:28] [TRT] [I] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 310 MiB, GPU 3947 MiB
+[05/08/2022-21:02:28] [TRT] [I] [BlockAssignment] Algorithm ShiftNTopDown took 87.7467ms to assign 11 blocks to 248 nodes requiring 171366408 bytes.
+[05/08/2022-21:02:28] [TRT] [I] Total Activation Memory: 171366408
+[05/08/2022-21:02:28] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in building engine: CPU +269, GPU +275, now: CPU 269, GPU 275 (MiB)
+[34m[1mTensorRT:[0m export success, saved as yolov5x6.engine (274.4 MB)
+
+Export complete (829.86s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5x6.engine
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5x6.engine')
+Validate:        python val.py --weights yolov5x6.engine
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5x6.engine for TensorRT inference...
+[05/08/2022-21:02:29] [TRT] [I] The logger passed into createInferRuntime differs from one already provided for an existing builder, runtime, or refitter. Uses of the global logger, returned by nvinfer1::getLogger(), will return the existing value.
+
+[05/08/2022-21:02:29] [TRT] [I] [MemUsageChange] Init CUDA: CPU +0, GPU +0, now: CPU 7981, GPU 8459 (MiB)
+[05/08/2022-21:02:30] [TRT] [I] Loaded engine size: 274 MiB
+[05/08/2022-21:02:30] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +275, now: CPU 0, GPU 275 (MiB)
+[05/08/2022-21:02:30] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +169, now: CPU 0, GPU 444 (MiB)
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m
+               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.
+                 all        128        929      0.859      0.768      0.865      0.685
+Speed: 0.5ms pre-process, 12.9ms inference, 1.6ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp204[0m
+WARNING: Benchmark failure for CoreML: CoreML inference not supported on GPU
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5x6 summary: 574 layers, 140730220 parameters, 0 gradients, 209.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5x6.pt with output shape (1, 102000, 85) (269.6 MB)
+
+[34m[1mTensorFlow SavedModel:[0m starting export with tensorflow 2.8.0...
+
+                 from  n    params  module                                  arguments                     
+2022-05-08 21:03:11.089576: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:11.116121: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:11.116442: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:11.118256: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-05-08 21:03:11.120138: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:11.120465: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:11.120750: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:11.122260: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:11.122542: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:11.122757: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:11.124137: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 39925 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:06:00.0, compute capability: 8.6
+  0                -1  1      8800  models.common.Conv                      [3, 80, 6, 2, 2]              
+  1                -1  1    115520  models.common.Conv                      [80, 160, 3, 2]               
+  2                -1  1    309120  models.common.C3                        [160, 160, 4]                 
+  3                -1  1    461440  models.common.Conv                      [160, 320, 3, 2]              
+  4                -1  1   2259200  models.common.C3                        [320, 320, 8]                 
+  5                -1  1   1844480  models.common.Conv                      [320, 640, 3, 2]              
+  6                -1  1  13125120  models.common.C3                        [640, 640, 12]                
+  7                -1  1   5531520  models.common.Conv                      [640, 960, 3, 2]              
+  8                -1  1  11070720  models.common.C3                        [960, 960, 4]                 
+  9                -1  1  11061760  models.common.Conv                      [960, 1280, 3, 2]             
+ 10                -1  1  19676160  models.common.C3                        [1280, 1280, 4]               
+ 11                -1  1   4099840  models.common.SPPF                      [1280, 1280, 5]               
+ 12                -1  1   1230720  models.common.Conv                      [1280, 960, 1, 1]             
+ 13                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 14           [-1, 8]  1         0  models.common.Concat                    [1]                           
+ 15                -1  1  11992320  models.common.C3                        [1920, 960, 4, False]         
+ 16                -1  1    615680  models.common.Conv                      [960, 640, 1, 1]              
+ 17                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 18           [-1, 6]  1         0  models.common.Concat                    [1]                           
+ 19                -1  1   5332480  models.common.C3                        [1280, 640, 4, False]         
+ 20                -1  1    205440  models.common.Conv                      [640, 320, 1, 1]              
+ 21                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 22           [-1, 4]  1         0  models.common.Concat                    [1]                           
+ 23                -1  1   1335040  models.common.C3                        [640, 320, 4, False]          
+ 24                -1  1    922240  models.common.Conv                      [320, 320, 3, 2]              
+ 25          [-1, 20]  1         0  models.common.Concat                    [1]                           
+ 26                -1  1   4922880  models.common.C3                        [640, 640, 4, False]          
+ 27                -1  1   3687680  models.common.Conv                      [640, 640, 3, 2]              
+ 28          [-1, 16]  1         0  models.common.Concat                    [1]                           
+ 29                -1  1  11377920  models.common.C3                        [1280, 960, 4, False]         
+ 30                -1  1   8296320  models.common.Conv                      [960, 960, 3, 2]              
+ 31          [-1, 12]  1         0  models.common.Concat                    [1]                           
+ 32                -1  1  20495360  models.common.C3                        [1920, 1280, 4, False]        
+ 33  [23, 26, 29, 32]  1    817020  models.yolo.Detect                      [80, [[19, 27, 44, 40, 38, 94], [96, 68, 86, 152, 180, 137], [140, 301, 303, 264, 238, 542], [436, 615, 739, 380, 925, 792]], [320, 640, 960, 1280], [1280, 1280]]
+2022-05-08 21:03:12.995623: I tensorflow/stream_executor/cuda/cuda_dnn.cc:368] Loaded cuDNN version 8101
+2022-05-08 21:03:13.387845: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_1 (InputLayer)           [(1, 1280, 1280, 3)  0           []                               
+                                ]                                                                 
+                                                                                                  
+ tf_conv (TFConv)               (1, 640, 640, 80)    8720        ['input_1[0][0]']                
+                                                                                                  
+ tf_conv_1 (TFConv)             (1, 320, 320, 160)   115360      ['tf_conv[0][0]']                
+                                                                                                  
+ tfc3 (TFC3)                    (1, 320, 320, 160)   308160      ['tf_conv_1[0][0]']              
+                                                                                                  
+ tf_conv_13 (TFConv)            (1, 160, 160, 320)   461120      ['tfc3[0][0]']                   
+                                                                                                  
+ tfc3_1 (TFC3)                  (1, 160, 160, 320)   2256000     ['tf_conv_13[0][0]']             
+                                                                                                  
+ tf_conv_33 (TFConv)            (1, 80, 80, 640)     1843840     ['tfc3_1[0][0]']                 
+                                                                                                  
+ tfc3_2 (TFC3)                  (1, 80, 80, 640)     13116160    ['tf_conv_33[0][0]']             
+                                                                                                  
+ tf_conv_61 (TFConv)            (1, 40, 40, 960)     5530560     ['tfc3_2[0][0]']                 
+                                                                                                  
+ tfc3_3 (TFC3)                  (1, 40, 40, 960)     11064960    ['tf_conv_61[0][0]']             
+                                                                                                  
+ tf_conv_73 (TFConv)            (1, 20, 20, 1280)    11060480    ['tfc3_3[0][0]']                 
+                                                                                                  
+ tfc3_4 (TFC3)                  (1, 20, 20, 1280)    19668480    ['tf_conv_73[0][0]']             
+                                                                                                  
+ tfsppf (TFSPPF)                (1, 20, 20, 1280)    4097920     ['tfc3_4[0][0]']                 
+                                                                                                  
+ tf_conv_87 (TFConv)            (1, 20, 20, 960)     1229760     ['tfsppf[0][0]']                 
+                                                                                                  
+ tf_upsample (TFUpsample)       (1, 40, 40, 960)     0           ['tf_conv_87[0][0]']             
+                                                                                                  
+ tf_concat (TFConcat)           (1, 40, 40, 1920)    0           ['tf_upsample[0][0]',            
+                                                                  'tfc3_3[0][0]']                 
+                                                                                                  
+ tfc3_5 (TFC3)                  (1, 40, 40, 960)     11986560    ['tf_concat[0][0]']              
+                                                                                                  
+ tf_conv_99 (TFConv)            (1, 40, 40, 640)     615040      ['tfc3_5[0][0]']                 
+                                                                                                  
+ tf_upsample_1 (TFUpsample)     (1, 80, 80, 640)     0           ['tf_conv_99[0][0]']             
+                                                                                                  
+ tf_concat_1 (TFConcat)         (1, 80, 80, 1280)    0           ['tf_upsample_1[0][0]',          
+                                                                  'tfc3_2[0][0]']                 
+                                                                                                  
+ tfc3_6 (TFC3)                  (1, 80, 80, 640)     5328640     ['tf_concat_1[0][0]']            
+                                                                                                  
+ tf_conv_111 (TFConv)           (1, 80, 80, 320)     205120      ['tfc3_6[0][0]']                 
+                                                                                                  
+ tf_upsample_2 (TFUpsample)     (1, 160, 160, 320)   0           ['tf_conv_111[0][0]']            
+                                                                                                  
+ tf_concat_2 (TFConcat)         (1, 160, 160, 640)   0           ['tf_upsample_2[0][0]',          
+                                                                  'tfc3_1[0][0]']                 
+                                                                                                  
+ tfc3_7 (TFC3)                  (1, 160, 160, 320)   1333120     ['tf_concat_2[0][0]']            
+                                                                                                  
+ tf_conv_123 (TFConv)           (1, 80, 80, 320)     921920      ['tfc3_7[0][0]']                 
+                                                                                                  
+ tf_concat_3 (TFConcat)         (1, 80, 80, 640)     0           ['tf_conv_123[0][0]',            
+                                                                  'tf_conv_111[0][0]']            
+                                                                                                  
+ tfc3_8 (TFC3)                  (1, 80, 80, 640)     4919040     ['tf_concat_3[0][0]']            
+                                                                                                  
+ tf_conv_135 (TFConv)           (1, 40, 40, 640)     3687040     ['tfc3_8[0][0]']                 
+                                                                                                  
+ tf_concat_4 (TFConcat)         (1, 40, 40, 1280)    0           ['tf_conv_135[0][0]',            
+                                                                  'tf_conv_99[0][0]']             
+                                                                                                  
+ tfc3_9 (TFC3)                  (1, 40, 40, 960)     11372160    ['tf_concat_4[0][0]']            
+                                                                                                  
+ tf_conv_147 (TFConv)           (1, 20, 20, 960)     8295360     ['tfc3_9[0][0]']                 
+                                                                                                  
+ tf_concat_5 (TFConcat)         (1, 20, 20, 1920)    0           ['tf_conv_147[0][0]',            
+                                                                  'tf_conv_87[0][0]']             
+                                                                                                  
+ tfc3_10 (TFC3)                 (1, 20, 20, 1280)    20487680    ['tf_concat_5[0][0]']            
+                                                                                                  
+ tf_detect (TFDetect)           ((1, 102000, 85),    817020      ['tfc3_7[0][0]',                 
+                                 [(1, 25600, 3, 85)               'tfc3_8[0][0]',                 
+                                , (1, 6400, 3, 85),               'tfc3_9[0][0]',                 
+                                 (1, 1600, 3, 85),                'tfc3_10[0][0]']                
+                                 (1, 400, 3, 85)])                                                
+                                                                                                  
+==================================================================================================
+Total params: 140,730,220
+Trainable params: 0
+Non-trainable params: 140,730,220
+__________________________________________________________________________________________________
+2022-05-08 21:03:22.133420: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:22.133655: I tensorflow/core/grappler/devices.cc:66] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+2022-05-08 21:03:22.133860: I tensorflow/core/grappler/clusters/single_machine.cc:358] Starting new session
+2022-05-08 21:03:22.134480: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:22.134678: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:22.134868: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:22.135127: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:22.135327: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:03:22.135472: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 39925 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:06:00.0, compute capability: 8.6
+2022-05-08 21:03:22.182281: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:1164] Optimization results for grappler item: graph_to_optimize
+  function_optimizer: function_optimizer did nothing. time = 1.358ms.
+  function_optimizer: function_optimizer did nothing. time = 0.004ms.
+
+2022-05-08 21:03:33.106023: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+Assets written to: yolov5x6_saved_model/assets
+[34m[1mTensorFlow SavedModel:[0m export success, saved as yolov5x6_saved_model (537.6 MB)
+
+Export complete (58.97s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5x6_saved_model
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5x6_saved_model')
+Validate:        python val.py --weights yolov5x6_saved_model
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5x6_saved_model for TensorFlow SavedModel inference...
+Importing a function (__inference_pruned_16858) with ops with unsaved custom gradients. Will likely fail if a gradient is requested.
+Forcing --batch-size 1 square inference (1,3,1280,1280) for non-PyTorch models
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m
+               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.
+                 all        128        929      0.863      0.771      0.866      0.687
+Speed: 0.5ms pre-process, 107.8ms inference, 1.5ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp205[0m
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5x6 summary: 574 layers, 140730220 parameters, 0 gradients, 209.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5x6.pt with output shape (1, 102000, 85) (269.6 MB)
+
+[34m[1mTensorFlow SavedModel:[0m starting export with tensorflow 2.8.0...
+
+                 from  n    params  module                                  arguments                     
+  0                -1  1      8800  models.common.Conv                      [3, 80, 6, 2, 2]              
+  1                -1  1    115520  models.common.Conv                      [80, 160, 3, 2]               
+  2                -1  1    309120  models.common.C3                        [160, 160, 4]                 
+  3                -1  1    461440  models.common.Conv                      [160, 320, 3, 2]              
+  4                -1  1   2259200  models.common.C3                        [320, 320, 8]                 
+  5                -1  1   1844480  models.common.Conv                      [320, 640, 3, 2]              
+  6                -1  1  13125120  models.common.C3                        [640, 640, 12]                
+  7                -1  1   5531520  models.common.Conv                      [640, 960, 3, 2]              
+  8                -1  1  11070720  models.common.C3                        [960, 960, 4]                 
+  9                -1  1  11061760  models.common.Conv                      [960, 1280, 3, 2]             
+ 10                -1  1  19676160  models.common.C3                        [1280, 1280, 4]               
+ 11                -1  1   4099840  models.common.SPPF                      [1280, 1280, 5]               
+ 12                -1  1   1230720  models.common.Conv                      [1280, 960, 1, 1]             
+ 13                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 14           [-1, 8]  1         0  models.common.Concat                    [1]                           
+ 15                -1  1  11992320  models.common.C3                        [1920, 960, 4, False]         
+ 16                -1  1    615680  models.common.Conv                      [960, 640, 1, 1]              
+ 17                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 18           [-1, 6]  1         0  models.common.Concat                    [1]                           
+ 19                -1  1   5332480  models.common.C3                        [1280, 640, 4, False]         
+ 20                -1  1    205440  models.common.Conv                      [640, 320, 1, 1]              
+ 21                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 22           [-1, 4]  1         0  models.common.Concat                    [1]                           
+ 23                -1  1   1335040  models.common.C3                        [640, 320, 4, False]          
+ 24                -1  1    922240  models.common.Conv                      [320, 320, 3, 2]              
+ 25          [-1, 20]  1         0  models.common.Concat                    [1]                           
+ 26                -1  1   4922880  models.common.C3                        [640, 640, 4, False]          
+ 27                -1  1   3687680  models.common.Conv                      [640, 640, 3, 2]              
+ 28          [-1, 16]  1         0  models.common.Concat                    [1]                           
+ 29                -1  1  11377920  models.common.C3                        [1280, 960, 4, False]         
+ 30                -1  1   8296320  models.common.Conv                      [960, 960, 3, 2]              
+ 31          [-1, 12]  1         0  models.common.Concat                    [1]                           
+ 32                -1  1  20495360  models.common.C3                        [1920, 1280, 4, False]        
+ 33  [23, 26, 29, 32]  1    817020  models.yolo.Detect                      [80, [[19, 27, 44, 40, 38, 94], [96, 68, 86, 152, 180, 137], [140, 301, 303, 264, 238, 542], [436, 615, 739, 380, 925, 792]], [320, 640, 960, 1280], [1280, 1280]]
+Model: "model_1"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_2 (InputLayer)           [(1, 1280, 1280, 3)  0           []                               
+                                ]                                                                 
+                                                                                                  
+ tf_conv_159 (TFConv)           (1, 640, 640, 80)    8720        ['input_2[0][0]']                
+                                                                                                  
+ tf_conv_160 (TFConv)           (1, 320, 320, 160)   115360      ['tf_conv_159[0][0]']            
+                                                                                                  
+ tfc3_11 (TFC3)                 (1, 320, 320, 160)   308160      ['tf_conv_160[0][0]']            
+                                                                                                  
+ tf_conv_172 (TFConv)           (1, 160, 160, 320)   461120      ['tfc3_11[0][0]']                
+                                                                                                  
+ tfc3_12 (TFC3)                 (1, 160, 160, 320)   2256000     ['tf_conv_172[0][0]']            
+                                                                                                  
+ tf_conv_192 (TFConv)           (1, 80, 80, 640)     1843840     ['tfc3_12[0][0]']                
+                                                                                                  
+ tfc3_13 (TFC3)                 (1, 80, 80, 640)     13116160    ['tf_conv_192[0][0]']            
+                                                                                                  
+ tf_conv_220 (TFConv)           (1, 40, 40, 960)     5530560     ['tfc3_13[0][0]']                
+                                                                                                  
+ tfc3_14 (TFC3)                 (1, 40, 40, 960)     11064960    ['tf_conv_220[0][0]']            
+                                                                                                  
+ tf_conv_232 (TFConv)           (1, 20, 20, 1280)    11060480    ['tfc3_14[0][0]']                
+                                                                                                  
+ tfc3_15 (TFC3)                 (1, 20, 20, 1280)    19668480    ['tf_conv_232[0][0]']            
+                                                                                                  
+ tfsppf_1 (TFSPPF)              (1, 20, 20, 1280)    4097920     ['tfc3_15[0][0]']                
+                                                                                                  
+ tf_conv_246 (TFConv)           (1, 20, 20, 960)     1229760     ['tfsppf_1[0][0]']               
+                                                                                                  
+ tf_upsample_3 (TFUpsample)     (1, 40, 40, 960)     0           ['tf_conv_246[0][0]']            
+                                                                                                  
+ tf_concat_6 (TFConcat)         (1, 40, 40, 1920)    0           ['tf_upsample_3[0][0]',          
+                                                                  'tfc3_14[0][0]']                
+                                                                                                  
+ tfc3_16 (TFC3)                 (1, 40, 40, 960)     11986560    ['tf_concat_6[0][0]']            
+                                                                                                  
+ tf_conv_258 (TFConv)           (1, 40, 40, 640)     615040      ['tfc3_16[0][0]']                
+                                                                                                  
+ tf_upsample_4 (TFUpsample)     (1, 80, 80, 640)     0           ['tf_conv_258[0][0]']            
+                                                                                                  
+ tf_concat_7 (TFConcat)         (1, 80, 80, 1280)    0           ['tf_upsample_4[0][0]',          
+                                                                  'tfc3_13[0][0]']                
+                                                                                                  
+ tfc3_17 (TFC3)                 (1, 80, 80, 640)     5328640     ['tf_concat_7[0][0]']            
+                                                                                                  
+ tf_conv_270 (TFConv)           (1, 80, 80, 320)     205120      ['tfc3_17[0][0]']                
+                                                                                                  
+ tf_upsample_5 (TFUpsample)     (1, 160, 160, 320)   0           ['tf_conv_270[0][0]']            
+                                                                                                  
+ tf_concat_8 (TFConcat)         (1, 160, 160, 640)   0           ['tf_upsample_5[0][0]',          
+                                                                  'tfc3_12[0][0]']                
+                                                                                                  
+ tfc3_18 (TFC3)                 (1, 160, 160, 320)   1333120     ['tf_concat_8[0][0]']            
+                                                                                                  
+ tf_conv_282 (TFConv)           (1, 80, 80, 320)     921920      ['tfc3_18[0][0]']                
+                                                                                                  
+ tf_concat_9 (TFConcat)         (1, 80, 80, 640)     0           ['tf_conv_282[0][0]',            
+                                                                  'tf_conv_270[0][0]']            
+                                                                                                  
+ tfc3_19 (TFC3)                 (1, 80, 80, 640)     4919040     ['tf_concat_9[0][0]']            
+                                                                                                  
+ tf_conv_294 (TFConv)           (1, 40, 40, 640)     3687040     ['tfc3_19[0][0]']                
+                                                                                                  
+ tf_concat_10 (TFConcat)        (1, 40, 40, 1280)    0           ['tf_conv_294[0][0]',            
+                                                                  'tf_conv_258[0][0]']            
+                                                                                                  
+ tfc3_20 (TFC3)                 (1, 40, 40, 960)     11372160    ['tf_concat_10[0][0]']           
+                                                                                                  
+ tf_conv_306 (TFConv)           (1, 20, 20, 960)     8295360     ['tfc3_20[0][0]']                
+                                                                                                  
+ tf_concat_11 (TFConcat)        (1, 20, 20, 1920)    0           ['tf_conv_306[0][0]',            
+                                                                  'tf_conv_246[0][0]']            
+                                                                                                  
+ tfc3_21 (TFC3)                 (1, 20, 20, 1280)    20487680    ['tf_concat_11[0][0]']           
+                                                                                                  
+ tf_detect_1 (TFDetect)         ((1, 102000, 85),    817020      ['tfc3_18[0][0]',                
+                                 [(1, 25600, 3, 85)               'tfc3_19[0][0]',                
+                                , (1, 6400, 3, 85),               'tfc3_20[0][0]',                
+                                 (1, 1600, 3, 85),                'tfc3_21[0][0]']                
+                                 (1, 400, 3, 85)])                                                
+                                                                                                  
+==================================================================================================
+Total params: 140,730,220
+Trainable params: 0
+Non-trainable params: 140,730,220
+__________________________________________________________________________________________________
+2022-05-08 21:04:12.690579: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:12.690780: I tensorflow/core/grappler/devices.cc:66] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+2022-05-08 21:04:12.690913: I tensorflow/core/grappler/clusters/single_machine.cc:358] Starting new session
+2022-05-08 21:04:12.691393: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:12.691554: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:12.691699: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:12.691906: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:12.692121: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:12.692232: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 39925 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:06:00.0, compute capability: 8.6
+2022-05-08 21:04:12.730259: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:1164] Optimization results for grappler item: graph_to_optimize
+  function_optimizer: function_optimizer did nothing. time = 0.02ms.
+  function_optimizer: function_optimizer did nothing. time = 0.004ms.
+
+Assets written to: yolov5x6_saved_model/assets
+[34m[1mTensorFlow SavedModel:[0m export success, saved as yolov5x6_saved_model (537.6 MB)
+
+[34m[1mTensorFlow GraphDef:[0m starting export with tensorflow 2.8.0...
+2022-05-08 21:04:27.109309: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:27.109557: I tensorflow/core/grappler/devices.cc:66] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+2022-05-08 21:04:27.109739: I tensorflow/core/grappler/clusters/single_machine.cc:358] Starting new session
+2022-05-08 21:04:27.110124: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:27.110341: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:27.110535: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:27.110789: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:27.110998: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:04:27.111161: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 39925 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:06:00.0, compute capability: 8.6
+2022-05-08 21:04:27.147146: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:1164] Optimization results for grappler item: graph_to_optimize
+  function_optimizer: function_optimizer did nothing. time = 0.021ms.
+  function_optimizer: function_optimizer did nothing. time = 0.005ms.
+
+[34m[1mTensorFlow GraphDef:[0m export success, saved as yolov5x6.pb (537.5 MB)
+
+Export complete (31.32s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5x6.pb
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5x6.pb')
+Validate:        python val.py --weights yolov5x6.pb
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5x6.pb for TensorFlow GraphDef inference...
+Forcing --batch-size 1 square inference (1,3,1280,1280) for non-PyTorch models
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.c[0m
+               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.               Class     Images     Labels          P          R     mAP@.
+                 all        128        929      0.863      0.771      0.866      0.687
+Speed: 0.5ms pre-process, 107.9ms inference, 1.5ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp206[0m
+WARNING: Benchmark failure for TensorFlow Lite: TensorFlow Lite inference not supported on GPU
+WARNING: Benchmark failure for TensorFlow Edge TPU: Edge TPU not supported
+WARNING: Benchmark failure for TensorFlow.js: TF.js not supported
+
+
+[34m[1mbenchmarks: [0mweights=yolov5x6.pt, imgsz=1280, batch_size=1, data=/home/ubuntu/data/repos/yolov5/data/coco128.yaml, device=0, half=False, test=False, pt_only=False
+[31m[1mrequirements:[0m psutil not found and is required by YOLOv5, attempting auto-update...
+Collecting psutil
+  Using cached psutil-5.9.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (283 kB)
+Installing collected packages: psutil
+Successfully installed psutil-5.9.0
+
+[31m[1mrequirements:[0m IPython not found and is required by YOLOv5, attempting auto-update...
+Collecting IPython
+  Using cached ipython-8.3.0-py3-none-any.whl (750 kB)
+Collecting jedi>=0.16
+  Using cached jedi-0.18.1-py2.py3-none-any.whl (1.6 MB)
+Collecting matplotlib-inline
+  Using cached matplotlib_inline-0.1.3-py3-none-any.whl (8.2 kB)
+Collecting traitlets>=5
+  Using cached traitlets-5.1.1-py3-none-any.whl (102 kB)
+Collecting decorator
+  Using cached decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting backcall
+  Using cached backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: setuptools>=18.5 in /home/ubuntu/data/envs/venv-yolov5/lib/python3.8/site-packages (from IPython) (44.0.0)
+Collecting stack-data
+  Using cached stack_data-0.2.0-py3-none-any.whl (21 kB)
+Collecting pexpect>4.3; sys_platform != "win32"
+  Using cached pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+Collecting pickleshare
+  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+  Using cached prompt_toolkit-3.0.29-py3-none-any.whl (381 kB)
+Requirement already satisfied: pygments>=2.4.0 in /home/ubuntu/data/envs/venv-yolov5/lib/python3.8/site-packages (from IPython) (2.12.0)
+Collecting parso<0.9.0,>=0.8.0
+  Using cached parso-0.8.3-py2.py3-none-any.whl (100 kB)
+Collecting pure-eval
+  Using cached pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Collecting asttokens
+  Using cached asttokens-2.0.5-py2.py3-none-any.whl (20 kB)
+Collecting executing
+  Using cached executing-0.8.3-py2.py3-none-any.whl (16 kB)
+Collecting ptyprocess>=0.5
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Requirement already satisfied: six in /home/ubuntu/data/envs/venv-yolov5/lib/python3.8/site-packages (from asttokens->stack-data->IPython) (1.16.0)
+Installing collected packages: parso, jedi, traitlets, matplotlib-inline, decorator, backcall, pure-eval, asttokens, executing, stack-data, ptyprocess, pexpect, pickleshare, wcwidth, prompt-toolkit, IPython
+Successfully installed IPython-8.3.0 asttokens-2.0.5 backcall-0.2.0 decorator-5.1.1 executing-0.8.3 jedi-0.18.1 matplotlib-inline-0.1.3 parso-0.8.3 pexpect-4.8.0 pickleshare-0.7.5 prompt-toolkit-3.0.29 ptyprocess-0.7.0 pure-eval-0.2.2 stack-data-0.2.0 traitlets-5.1.1 wcwidth-0.2.5
+
+[31m[1mrequirements:[0m 2 packages updated per ['psutil', 'IPython']
+[31m[1mrequirements:[0m ⚠️ [1mRestart runtime or rerun command for updates to take effect[0m
+
+Checking setup...
+[2KYOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Benchmarks complete (1131.97s)
+                   Format  mAP@0.5:0.95  Inference time (ms)
+0                 PyTorch        0.6868                47.52
+1             TorchScript        0.6868                47.39
+2                    ONNX        0.6866                77.43
+3                OpenVINO           NaN                  NaN
+4                TensorRT        0.6846                12.89
+5                  CoreML           NaN                  NaN
+6   TensorFlow SavedModel        0.6869               107.84
+7     TensorFlow GraphDef        0.6869               107.95
+8         TensorFlow Lite           NaN                  NaN
+9     TensorFlow Edge TPU           NaN                  NaN
+10          TensorFlow.js           NaN                  NaN
+[2KSetup complete ✅ (14 CPUs, 98.2 GB RAM, 31.7/992.3 GB disk)

@@ -1,0 +1,522 @@
+[34m[1mbenchmarks: [0mweights=yolov5s6.pt, imgsz=1280, batch_size=1, data=/home/ubuntu/data/repos/yolov5/data/coco128.yaml, device=0, half=False, test=False, pt_only=False
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5s6 summary: 280 layers, 12612508 parameters, 0 gradients, 16.8 GFLOPs
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   0%|                         Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   2%|▏                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   5%|▍                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   7%|▋                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  11%|█                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  15%|█▍                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  18%|█▊                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  21%|██                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  24%|██▍                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  28%|██▊                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  31%|███▏                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  34%|███▍                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  38%|███▊                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  41%|████▏                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  45%|████▍                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  48%|████▊                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  52%|█████▏                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  55%|█████▍                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  59%|█████▊                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  62%|██████▎                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  66%|██████▋                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  70%|██████▉                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  73%|███████▎                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  77%|███████▋                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  80%|███████▉                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  84%|████████▎                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  88%|████████▊                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  91%|█████████▏               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  95%|█████████▌               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  98%|█████████▊               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████
+                 all        128        929      0.753      0.713      0.785      0.545
+Speed: 0.5ms pre-process, 10.8ms inference, 1.4ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp207[0m
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5s6 summary: 280 layers, 12612508 parameters, 0 gradients, 16.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5s6.pt with output shape (1, 102000, 85) (24.8 MB)
+
+[34m[1mTorchScript:[0m starting export with torch 1.10.1+cu113...
+[34m[1mTorchScript:[0m export success, saved as yolov5s6.torchscript (49.3 MB)
+
+Export complete (1.86s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5s6.torchscript
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5s6.torchscript')
+Validate:        python val.py --weights yolov5s6.torchscript
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5s6.torchscript for TorchScript inference...
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   0%|                         Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   2%|▏                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   5%|▌                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   9%|▉                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  12%|█▎                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  16%|█▌                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  19%|█▉                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  22%|██▏                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  25%|██▌                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  28%|██▊                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  32%|███▏                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  36%|███▌                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  39%|███▉                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  42%|████▏                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  45%|████▌                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  48%|████▊                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  52%|█████▏                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  55%|█████▌                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  59%|█████▊                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  62%|██████▏                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  65%|██████▍                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  68%|██████▊                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  71%|███████                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  75%|███████▌                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  78%|███████▊                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  81%|████████▏                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  84%|████████▍                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  88%|████████▊                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  91%|█████████                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  94%|█████████▍               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  97%|█████████▋               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████
+                 all        128        929      0.753      0.713      0.785      0.545
+Speed: 0.5ms pre-process, 8.6ms inference, 1.3ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp208[0m
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5s6 summary: 280 layers, 12612508 parameters, 0 gradients, 16.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5s6.pt with output shape (1, 102000, 85) (24.8 MB)
+
+[34m[1mONNX:[0m starting export with onnx 1.11.0...
+[34m[1mONNX:[0m export success, saved as yolov5s6.onnx (49.7 MB)
+
+Export complete (3.53s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5s6.onnx
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5s6.onnx')
+Validate:        python val.py --weights yolov5s6.onnx
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5s6.onnx for ONNX Runtime inference...
+Forcing --batch-size 1 square inference (1,3,1280,1280) for non-PyTorch models
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   0%|                         Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   2%|▏                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   4%|▍                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   6%|▋                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   9%|▊                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  11%|█                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  13%|█▎                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  16%|█▌                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  18%|█▊                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  20%|██                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  23%|██▎                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  25%|██▌                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  27%|██▋                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  30%|██▉                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  32%|███▏                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  34%|███▍                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  36%|███▌                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  38%|███▊                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  40%|███▉                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  42%|████▏                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  45%|████▍                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  47%|████▋                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  49%|████▉                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  52%|█████▏                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  54%|█████▍                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  56%|█████▋                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  59%|█████▊                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  61%|██████                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  63%|██████▎                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  66%|██████▌                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  68%|██████▊                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  70%|███████                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  73%|███████▎                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  75%|███████▌                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  77%|███████▋                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  80%|███████▉                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  82%|████████▏                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  84%|████████▍                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  87%|████████▋                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  89%|████████▉                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  91%|█████████▏               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  94%|█████████▍               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  96%|█████████▌               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  98%|█████████▊               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████
+                 all        128        929       0.75      0.712      0.785      0.545
+Speed: 0.5ms pre-process, 25.7ms inference, 1.4ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp209[0m
+WARNING: Benchmark failure for OpenVINO: OpenVINO inference not supported on GPU
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5s6 summary: 280 layers, 12612508 parameters, 0 gradients, 16.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5s6.pt with output shape (1, 102000, 85) (24.8 MB)
+
+[34m[1mONNX:[0m starting export with onnx 1.11.0...
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+[34m[1mONNX:[0m export success, saved as yolov5s6.onnx (49.7 MB)
+
+[34m[1mTensorRT:[0m starting export with TensorRT 8.4.0.6...
+[05/08/2022-21:07:38] [TRT] [I] [MemUsageChange] Init CUDA: CPU +348, GPU +0, now: CPU 6882, GPU 4777 (MiB)
+[05/08/2022-21:07:39] [TRT] [I] [MemUsageSnapshot] Begin constructing builder kernel library: CPU 6901 MiB, GPU 4777 MiB
+[05/08/2022-21:07:39] [TRT] [I] [MemUsageSnapshot] End constructing builder kernel library: CPU 7276 MiB, GPU 4901 MiB
+[05/08/2022-21:07:40] [TRT] [I] ----------------------------------------------------------------
+[05/08/2022-21:07:40] [TRT] [I] Input filename:   yolov5s6.onnx
+[05/08/2022-21:07:40] [TRT] [I] ONNX IR version:  0.0.7
+[05/08/2022-21:07:40] [TRT] [I] Opset version:    13
+[05/08/2022-21:07:40] [TRT] [I] Producer name:    pytorch
+[05/08/2022-21:07:40] [TRT] [I] Producer version: 1.10
+[05/08/2022-21:07:40] [TRT] [I] Domain:           
+[05/08/2022-21:07:40] [TRT] [I] Model version:    0
+[05/08/2022-21:07:40] [TRT] [I] Doc string:       
+[05/08/2022-21:07:40] [TRT] [I] ----------------------------------------------------------------
+[05/08/2022-21:07:40] [TRT] [W] onnx2trt_utils.cpp:365: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+[34m[1mTensorRT:[0m Network Description:
+[34m[1mTensorRT:[0m	input "images" with shape (1, 3, 1280, 1280) and dtype DataType.FLOAT
+[34m[1mTensorRT:[0m	output "output" with shape (1, 102000, 85) and dtype DataType.FLOAT
+[34m[1mTensorRT:[0m building FP16 engine in yolov5s6.engine
+[05/08/2022-21:07:41] [TRT] [W] TensorRT was linked against cuBLAS/cuBLAS LT 11.8.0 but loaded cuBLAS/cuBLAS LT 110.9.2
+[05/08/2022-21:07:41] [TRT] [I] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +8, now: CPU 7334, GPU 4909 (MiB)
+[05/08/2022-21:07:41] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +1, GPU +10, now: CPU 7335, GPU 4919 (MiB)
+[05/08/2022-21:07:41] [TRT] [W] TensorRT was linked against cuDNN 8.3.2 but loaded cuDNN 8.1.1
+[05/08/2022-21:07:41] [TRT] [I] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[05/08/2022-21:10:34] [TRT] [I] Some tactics do not have sufficient workspace memory to run. Increasing workspace size will enable more tactics, please check verbose output for requested sizes.
+[05/08/2022-21:17:59] [TRT] [I] Detected 1 inputs and 5 output network tensors.
+[05/08/2022-21:18:03] [TRT] [I] Total Host Persistent Memory: 194752
+[05/08/2022-21:18:03] [TRT] [I] Total Device Persistent Memory: 1316352
+[05/08/2022-21:18:03] [TRT] [I] Total Scratch Memory: 0
+[05/08/2022-21:18:03] [TRT] [I] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 30 MiB, GPU 3330 MiB
+[05/08/2022-21:18:03] [TRT] [I] [BlockAssignment] Algorithm ShiftNTopDown took 39.1741ms to assign 10 blocks to 139 nodes requiring 74956808 bytes.
+[05/08/2022-21:18:03] [TRT] [I] Total Activation Memory: 74956808
+[05/08/2022-21:18:03] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in building engine: CPU +24, GPU +26, now: CPU 24, GPU 26 (MiB)
+[34m[1mTensorRT:[0m export success, saved as yolov5s6.engine (28.8 MB)
+
+Export complete (629.36s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5s6.engine
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5s6.engine')
+Validate:        python val.py --weights yolov5s6.engine
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5s6.engine for TensorRT inference...
+[05/08/2022-21:18:04] [TRT] [I] The logger passed into createInferRuntime differs from one already provided for an existing builder, runtime, or refitter. Uses of the global logger, returned by nvinfer1::getLogger(), will return the existing value.
+
+[05/08/2022-21:18:04] [TRT] [I] [MemUsageChange] Init CUDA: CPU +0, GPU +0, now: CPU 7349, GPU 4903 (MiB)
+[05/08/2022-21:18:04] [TRT] [I] Loaded engine size: 28 MiB
+[05/08/2022-21:18:04] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +26, now: CPU 0, GPU 26 (MiB)
+[05/08/2022-21:18:04] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +72, now: CPU 0, GPU 98 (MiB)
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   0%|                         Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   3%|▎                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   8%|▊                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  12%|█▎                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  17%|█▋                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  22%|██▏                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  27%|██▋                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  31%|███▏                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  36%|███▌                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  41%|████                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  45%|████▌                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  49%|████▉                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  55%|█████▍                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  59%|█████▉                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  64%|██████▍                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  69%|██████▉                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  74%|███████▍                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  79%|███████▉                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  84%|████████▎                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  88%|████████▊                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  93%|█████████▎               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  98%|█████████▊               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████
+                 all        128        929      0.727      0.734      0.785      0.546
+Speed: 0.6ms pre-process, 2.8ms inference, 1.6ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp210[0m
+WARNING: Benchmark failure for CoreML: CoreML inference not supported on GPU
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5s6 summary: 280 layers, 12612508 parameters, 0 gradients, 16.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5s6.pt with output shape (1, 102000, 85) (24.8 MB)
+
+[34m[1mTensorFlow SavedModel:[0m starting export with tensorflow 2.8.0...
+
+                 from  n    params  module                                  arguments                     
+2022-05-08 21:18:34.682805: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:34.689331: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:34.689715: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:34.690734: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-05-08 21:18:34.692227: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:34.692639: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:34.692841: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:34.693438: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:34.693656: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:34.693864: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:34.694208: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 42605 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:06:00.0, compute capability: 8.6
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]              
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]                
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]                   
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]               
+  4                -1  1    115712  models.common.C3                        [128, 128, 2]                 
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]              
+  6                -1  1    625152  models.common.C3                        [256, 256, 3]                 
+  7                -1  1    885504  models.common.Conv                      [256, 384, 3, 2]              
+  8                -1  1    665856  models.common.C3                        [384, 384, 1]                 
+  9                -1  1   1770496  models.common.Conv                      [384, 512, 3, 2]              
+ 10                -1  1   1182720  models.common.C3                        [512, 512, 1]                 
+ 11                -1  1    656896  models.common.SPPF                      [512, 512, 5]                 
+ 12                -1  1    197376  models.common.Conv                      [512, 384, 1, 1]              
+ 13                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 14           [-1, 8]  1         0  models.common.Concat                    [1]                           
+ 15                -1  1    813312  models.common.C3                        [768, 384, 1, False]          
+ 16                -1  1     98816  models.common.Conv                      [384, 256, 1, 1]              
+ 17                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 18           [-1, 6]  1         0  models.common.Concat                    [1]                           
+ 19                -1  1    361984  models.common.C3                        [512, 256, 1, False]          
+ 20                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]              
+ 21                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 22           [-1, 4]  1         0  models.common.Concat                    [1]                           
+ 23                -1  1     90880  models.common.C3                        [256, 128, 1, False]          
+ 24                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]              
+ 25          [-1, 20]  1         0  models.common.Concat                    [1]                           
+ 26                -1  1    296448  models.common.C3                        [256, 256, 1, False]          
+ 27                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]              
+ 28          [-1, 16]  1         0  models.common.Concat                    [1]                           
+ 29                -1  1    715008  models.common.C3                        [512, 384, 1, False]          
+ 30                -1  1   1327872  models.common.Conv                      [384, 384, 3, 2]              
+ 31          [-1, 12]  1         0  models.common.Concat                    [1]                           
+ 32                -1  1   1313792  models.common.C3                        [768, 512, 1, False]          
+ 33  [23, 26, 29, 32]  1    327420  models.yolo.Detect                      [80, [[19, 27, 44, 40, 38, 94], [96, 68, 86, 152, 180, 137], [140, 301, 303, 264, 238, 542], [436, 615, 739, 380, 925, 792]], [128, 256, 384, 512], [1280, 1280]]
+2022-05-08 21:18:35.436257: I tensorflow/stream_executor/cuda/cuda_dnn.cc:368] Loaded cuDNN version 8101
+2022-05-08 21:18:35.618237: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_1 (InputLayer)           [(1, 1280, 1280, 3)  0           []                               
+                                ]                                                                 
+                                                                                                  
+ tf_conv (TFConv)               (1, 640, 640, 32)    3488        ['input_1[0][0]']                
+                                                                                                  
+ tf_conv_1 (TFConv)             (1, 320, 320, 64)    18496       ['tf_conv[0][0]']                
+                                                                                                  
+ tfc3 (TFC3)                    (1, 320, 320, 64)    18624       ['tf_conv_1[0][0]']              
+                                                                                                  
+ tf_conv_7 (TFConv)             (1, 160, 160, 128)   73856       ['tfc3[0][0]']                   
+                                                                                                  
+ tfc3_1 (TFC3)                  (1, 160, 160, 128)   115200      ['tf_conv_7[0][0]']              
+                                                                                                  
+ tf_conv_15 (TFConv)            (1, 80, 80, 256)     295168      ['tfc3_1[0][0]']                 
+                                                                                                  
+ tfc3_2 (TFC3)                  (1, 80, 80, 256)     623872      ['tf_conv_15[0][0]']             
+                                                                                                  
+ tf_conv_25 (TFConv)            (1, 40, 40, 384)     885120      ['tfc3_2[0][0]']                 
+                                                                                                  
+ tfc3_3 (TFC3)                  (1, 40, 40, 384)     664704      ['tf_conv_25[0][0]']             
+                                                                                                  
+ tf_conv_31 (TFConv)            (1, 20, 20, 512)     1769984     ['tfc3_3[0][0]']                 
+                                                                                                  
+ tfc3_4 (TFC3)                  (1, 20, 20, 512)     1181184     ['tf_conv_31[0][0]']             
+                                                                                                  
+ tfsppf (TFSPPF)                (1, 20, 20, 512)     656128      ['tfc3_4[0][0]']                 
+                                                                                                  
+ tf_conv_39 (TFConv)            (1, 20, 20, 384)     196992      ['tfsppf[0][0]']                 
+                                                                                                  
+ tf_upsample (TFUpsample)       (1, 40, 40, 384)     0           ['tf_conv_39[0][0]']             
+                                                                                                  
+ tf_concat (TFConcat)           (1, 40, 40, 768)     0           ['tf_upsample[0][0]',            
+                                                                  'tfc3_3[0][0]']                 
+                                                                                                  
+ tfc3_5 (TFC3)                  (1, 40, 40, 384)     812160      ['tf_concat[0][0]']              
+                                                                                                  
+ tf_conv_45 (TFConv)            (1, 40, 40, 256)     98560       ['tfc3_5[0][0]']                 
+                                                                                                  
+ tf_upsample_1 (TFUpsample)     (1, 80, 80, 256)     0           ['tf_conv_45[0][0]']             
+                                                                                                  
+ tf_concat_1 (TFConcat)         (1, 80, 80, 512)     0           ['tf_upsample_1[0][0]',          
+                                                                  'tfc3_2[0][0]']                 
+                                                                                                  
+ tfc3_6 (TFC3)                  (1, 80, 80, 256)     361216      ['tf_concat_1[0][0]']            
+                                                                                                  
+ tf_conv_51 (TFConv)            (1, 80, 80, 128)     32896       ['tfc3_6[0][0]']                 
+                                                                                                  
+ tf_upsample_2 (TFUpsample)     (1, 160, 160, 128)   0           ['tf_conv_51[0][0]']             
+                                                                                                  
+ tf_concat_2 (TFConcat)         (1, 160, 160, 256)   0           ['tf_upsample_2[0][0]',          
+                                                                  'tfc3_1[0][0]']                 
+                                                                                                  
+ tfc3_7 (TFC3)                  (1, 160, 160, 128)   90496       ['tf_concat_2[0][0]']            
+                                                                                                  
+ tf_conv_57 (TFConv)            (1, 80, 80, 128)     147584      ['tfc3_7[0][0]']                 
+                                                                                                  
+ tf_concat_3 (TFConcat)         (1, 80, 80, 256)     0           ['tf_conv_57[0][0]',             
+                                                                  'tf_conv_51[0][0]']             
+                                                                                                  
+ tfc3_8 (TFC3)                  (1, 80, 80, 256)     295680      ['tf_concat_3[0][0]']            
+                                                                                                  
+ tf_conv_63 (TFConv)            (1, 40, 40, 256)     590080      ['tfc3_8[0][0]']                 
+                                                                                                  
+ tf_concat_4 (TFConcat)         (1, 40, 40, 512)     0           ['tf_conv_63[0][0]',             
+                                                                  'tf_conv_45[0][0]']             
+                                                                                                  
+ tfc3_9 (TFC3)                  (1, 40, 40, 384)     713856      ['tf_concat_4[0][0]']            
+                                                                                                  
+ tf_conv_69 (TFConv)            (1, 20, 20, 384)     1327488     ['tfc3_9[0][0]']                 
+                                                                                                  
+ tf_concat_5 (TFConcat)         (1, 20, 20, 768)     0           ['tf_conv_69[0][0]',             
+                                                                  'tf_conv_39[0][0]']             
+                                                                                                  
+ tfc3_10 (TFC3)                 (1, 20, 20, 512)     1312256     ['tf_concat_5[0][0]']            
+                                                                                                  
+ tf_detect (TFDetect)           ((1, 102000, 85),    327420      ['tfc3_7[0][0]',                 
+                                 [(1, 25600, 3, 85)               'tfc3_8[0][0]',                 
+                                , (1, 6400, 3, 85),               'tfc3_9[0][0]',                 
+                                 (1, 1600, 3, 85),                'tfc3_10[0][0]']                
+                                 (1, 400, 3, 85)])                                                
+                                                                                                  
+==================================================================================================
+Total params: 12,612,508
+Trainable params: 0
+Non-trainable params: 12,612,508
+__________________________________________________________________________________________________
+2022-05-08 21:18:39.772020: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:39.772267: I tensorflow/core/grappler/devices.cc:66] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+2022-05-08 21:18:39.772446: I tensorflow/core/grappler/clusters/single_machine.cc:358] Starting new session
+2022-05-08 21:18:39.773108: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:39.773355: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:39.773547: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:39.773791: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:39.773986: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:39.774130: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 42605 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:06:00.0, compute capability: 8.6
+2022-05-08 21:18:39.804654: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:1164] Optimization results for grappler item: graph_to_optimize
+  function_optimizer: function_optimizer did nothing. time = 0.308ms.
+  function_optimizer: function_optimizer did nothing. time = 0.004ms.
+
+2022-05-08 21:18:42.192207: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+Assets written to: yolov5s6_saved_model/assets
+[34m[1mTensorFlow SavedModel:[0m export success, saved as yolov5s6_saved_model (48.6 MB)
+
+Export complete (34.96s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5s6_saved_model
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5s6_saved_model')
+Validate:        python val.py --weights yolov5s6_saved_model
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5s6_saved_model for TensorFlow SavedModel inference...
+Importing a function (__inference_pruned_8902) with ops with unsaved custom gradients. Will likely fail if a gradient is requested.
+Forcing --batch-size 1 square inference (1,3,1280,1280) for non-PyTorch models
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   0%|                         Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   2%|▏                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   3%|▎                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   5%|▍                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   6%|▋                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   8%|▊                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   9%|▉                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  11%|█                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  12%|█▎                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  14%|█▍                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  16%|█▌                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  17%|█▋                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  19%|█▉                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  20%|██                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  22%|██▏                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  23%|██▎                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  25%|██▌                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  27%|██▋                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  28%|██▊                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  30%|██▉                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  31%|███▏                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  33%|███▎                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  34%|███▍                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  36%|███▌                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  38%|███▊                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  39%|███▉                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  41%|████                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  42%|████▏                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  44%|████▍                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  45%|████▌                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  47%|████▋                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  48%|████▊                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  50%|█████                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  52%|█████▏                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  53%|█████▎                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  55%|█████▍                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  56%|█████▋                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  58%|█████▊                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  59%|█████▉                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  61%|██████                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  62%|██████▎                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  64%|██████▍                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  66%|██████▌                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  67%|██████▋                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  69%|██████▉                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  70%|███████                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  72%|███████▏                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  73%|███████▎                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  75%|███████▌                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  77%|███████▋                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  78%|███████▊                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  80%|███████▉                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  81%|████████▏                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  83%|████████▎                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  84%|████████▍                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  86%|████████▌                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  88%|████████▊                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  89%|████████▉                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  91%|█████████                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  92%|█████████▏               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  94%|█████████▍               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  95%|█████████▌               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  97%|█████████▋               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  98%|█████████▊               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████
+                 all        128        929       0.75      0.712      0.785      0.545
+Speed: 0.6ms pre-process, 54.0ms inference, 1.6ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp211[0m
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Fusing layers... 
+YOLOv5s6 summary: 280 layers, 12612508 parameters, 0 gradients, 16.8 GFLOPs
+
+[34m[1mPyTorch:[0m starting from yolov5s6.pt with output shape (1, 102000, 85) (24.8 MB)
+
+[34m[1mTensorFlow SavedModel:[0m starting export with tensorflow 2.8.0...
+
+                 from  n    params  module                                  arguments                     
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]              
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]                
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]                   
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]               
+  4                -1  1    115712  models.common.C3                        [128, 128, 2]                 
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]              
+  6                -1  1    625152  models.common.C3                        [256, 256, 3]                 
+  7                -1  1    885504  models.common.Conv                      [256, 384, 3, 2]              
+  8                -1  1    665856  models.common.C3                        [384, 384, 1]                 
+  9                -1  1   1770496  models.common.Conv                      [384, 512, 3, 2]              
+ 10                -1  1   1182720  models.common.C3                        [512, 512, 1]                 
+ 11                -1  1    656896  models.common.SPPF                      [512, 512, 5]                 
+ 12                -1  1    197376  models.common.Conv                      [512, 384, 1, 1]              
+ 13                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 14           [-1, 8]  1         0  models.common.Concat                    [1]                           
+ 15                -1  1    813312  models.common.C3                        [768, 384, 1, False]          
+ 16                -1  1     98816  models.common.Conv                      [384, 256, 1, 1]              
+ 17                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 18           [-1, 6]  1         0  models.common.Concat                    [1]                           
+ 19                -1  1    361984  models.common.C3                        [512, 256, 1, False]          
+ 20                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]              
+ 21                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']          
+ 22           [-1, 4]  1         0  models.common.Concat                    [1]                           
+ 23                -1  1     90880  models.common.C3                        [256, 128, 1, False]          
+ 24                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]              
+ 25          [-1, 20]  1         0  models.common.Concat                    [1]                           
+ 26                -1  1    296448  models.common.C3                        [256, 256, 1, False]          
+ 27                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]              
+ 28          [-1, 16]  1         0  models.common.Concat                    [1]                           
+ 29                -1  1    715008  models.common.C3                        [512, 384, 1, False]          
+ 30                -1  1   1327872  models.common.Conv                      [384, 384, 3, 2]              
+ 31          [-1, 12]  1         0  models.common.Concat                    [1]                           
+ 32                -1  1   1313792  models.common.C3                        [768, 512, 1, False]          
+ 33  [23, 26, 29, 32]  1    327420  models.yolo.Detect                      [80, [[19, 27, 44, 40, 38, 94], [96, 68, 86, 152, 180, 137], [140, 301, 303, 264, 238, 542], [436, 615, 739, 380, 925, 792]], [128, 256, 384, 512], [1280, 1280]]
+Model: "model_1"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_2 (InputLayer)           [(1, 1280, 1280, 3)  0           []                               
+                                ]                                                                 
+                                                                                                  
+ tf_conv_75 (TFConv)            (1, 640, 640, 32)    3488        ['input_2[0][0]']                
+                                                                                                  
+ tf_conv_76 (TFConv)            (1, 320, 320, 64)    18496       ['tf_conv_75[0][0]']             
+                                                                                                  
+ tfc3_11 (TFC3)                 (1, 320, 320, 64)    18624       ['tf_conv_76[0][0]']             
+                                                                                                  
+ tf_conv_82 (TFConv)            (1, 160, 160, 128)   73856       ['tfc3_11[0][0]']                
+                                                                                                  
+ tfc3_12 (TFC3)                 (1, 160, 160, 128)   115200      ['tf_conv_82[0][0]']             
+                                                                                                  
+ tf_conv_90 (TFConv)            (1, 80, 80, 256)     295168      ['tfc3_12[0][0]']                
+                                                                                                  
+ tfc3_13 (TFC3)                 (1, 80, 80, 256)     623872      ['tf_conv_90[0][0]']             
+                                                                                                  
+ tf_conv_100 (TFConv)           (1, 40, 40, 384)     885120      ['tfc3_13[0][0]']                
+                                                                                                  
+ tfc3_14 (TFC3)                 (1, 40, 40, 384)     664704      ['tf_conv_100[0][0]']            
+                                                                                                  
+ tf_conv_106 (TFConv)           (1, 20, 20, 512)     1769984     ['tfc3_14[0][0]']                
+                                                                                                  
+ tfc3_15 (TFC3)                 (1, 20, 20, 512)     1181184     ['tf_conv_106[0][0]']            
+                                                                                                  
+ tfsppf_1 (TFSPPF)              (1, 20, 20, 512)     656128      ['tfc3_15[0][0]']                
+                                                                                                  
+ tf_conv_114 (TFConv)           (1, 20, 20, 384)     196992      ['tfsppf_1[0][0]']               
+                                                                                                  
+ tf_upsample_3 (TFUpsample)     (1, 40, 40, 384)     0           ['tf_conv_114[0][0]']            
+                                                                                                  
+ tf_concat_6 (TFConcat)         (1, 40, 40, 768)     0           ['tf_upsample_3[0][0]',          
+                                                                  'tfc3_14[0][0]']                
+                                                                                                  
+ tfc3_16 (TFC3)                 (1, 40, 40, 384)     812160      ['tf_concat_6[0][0]']            
+                                                                                                  
+ tf_conv_120 (TFConv)           (1, 40, 40, 256)     98560       ['tfc3_16[0][0]']                
+                                                                                                  
+ tf_upsample_4 (TFUpsample)     (1, 80, 80, 256)     0           ['tf_conv_120[0][0]']            
+                                                                                                  
+ tf_concat_7 (TFConcat)         (1, 80, 80, 512)     0           ['tf_upsample_4[0][0]',          
+                                                                  'tfc3_13[0][0]']                
+                                                                                                  
+ tfc3_17 (TFC3)                 (1, 80, 80, 256)     361216      ['tf_concat_7[0][0]']            
+                                                                                                  
+ tf_conv_126 (TFConv)           (1, 80, 80, 128)     32896       ['tfc3_17[0][0]']                
+                                                                                                  
+ tf_upsample_5 (TFUpsample)     (1, 160, 160, 128)   0           ['tf_conv_126[0][0]']            
+                                                                                                  
+ tf_concat_8 (TFConcat)         (1, 160, 160, 256)   0           ['tf_upsample_5[0][0]',          
+                                                                  'tfc3_12[0][0]']                
+                                                                                                  
+ tfc3_18 (TFC3)                 (1, 160, 160, 128)   90496       ['tf_concat_8[0][0]']            
+                                                                                                  
+ tf_conv_132 (TFConv)           (1, 80, 80, 128)     147584      ['tfc3_18[0][0]']                
+                                                                                                  
+ tf_concat_9 (TFConcat)         (1, 80, 80, 256)     0           ['tf_conv_132[0][0]',            
+                                                                  'tf_conv_126[0][0]']            
+                                                                                                  
+ tfc3_19 (TFC3)                 (1, 80, 80, 256)     295680      ['tf_concat_9[0][0]']            
+                                                                                                  
+ tf_conv_138 (TFConv)           (1, 40, 40, 256)     590080      ['tfc3_19[0][0]']                
+                                                                                                  
+ tf_concat_10 (TFConcat)        (1, 40, 40, 512)     0           ['tf_conv_138[0][0]',            
+                                                                  'tf_conv_120[0][0]']            
+                                                                                                  
+ tfc3_20 (TFC3)                 (1, 40, 40, 384)     713856      ['tf_concat_10[0][0]']           
+                                                                                                  
+ tf_conv_144 (TFConv)           (1, 20, 20, 384)     1327488     ['tfc3_20[0][0]']                
+                                                                                                  
+ tf_concat_11 (TFConcat)        (1, 20, 20, 768)     0           ['tf_conv_144[0][0]',            
+                                                                  'tf_conv_114[0][0]']            
+                                                                                                  
+ tfc3_21 (TFC3)                 (1, 20, 20, 512)     1312256     ['tf_concat_11[0][0]']           
+                                                                                                  
+ tf_detect_1 (TFDetect)         ((1, 102000, 85),    327420      ['tfc3_18[0][0]',                
+                                 [(1, 25600, 3, 85)               'tfc3_19[0][0]',                
+                                , (1, 6400, 3, 85),               'tfc3_20[0][0]',                
+                                 (1, 1600, 3, 85),                'tfc3_21[0][0]']                
+                                 (1, 400, 3, 85)])                                                
+                                                                                                  
+==================================================================================================
+Total params: 12,612,508
+Trainable params: 0
+Non-trainable params: 12,612,508
+__________________________________________________________________________________________________
+2022-05-08 21:18:59.289032: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:59.289331: I tensorflow/core/grappler/devices.cc:66] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+2022-05-08 21:18:59.289469: I tensorflow/core/grappler/clusters/single_machine.cc:358] Starting new session
+2022-05-08 21:18:59.289840: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:59.290048: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:59.290234: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:59.290477: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:59.290672: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:18:59.290813: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 42605 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:06:00.0, compute capability: 8.6
+2022-05-08 21:18:59.317011: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:1164] Optimization results for grappler item: graph_to_optimize
+  function_optimizer: function_optimizer did nothing. time = 0.02ms.
+  function_optimizer: function_optimizer did nothing. time = 0.004ms.
+
+Assets written to: yolov5s6_saved_model/assets
+[34m[1mTensorFlow SavedModel:[0m export success, saved as yolov5s6_saved_model (48.6 MB)
+
+[34m[1mTensorFlow GraphDef:[0m starting export with tensorflow 2.8.0...
+2022-05-08 21:19:02.761654: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:19:02.761901: I tensorflow/core/grappler/devices.cc:66] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+2022-05-08 21:19:02.762023: I tensorflow/core/grappler/clusters/single_machine.cc:358] Starting new session
+2022-05-08 21:19:02.762508: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:19:02.762715: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:19:02.762903: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:19:02.763147: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:19:02.763340: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-05-08 21:19:02.763485: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 42605 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:06:00.0, compute capability: 8.6
+2022-05-08 21:19:02.791766: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:1164] Optimization results for grappler item: graph_to_optimize
+  function_optimizer: function_optimizer did nothing. time = 0.025ms.
+  function_optimizer: function_optimizer did nothing. time = 0.006ms.
+
+[34m[1mTensorFlow GraphDef:[0m export success, saved as yolov5s6.pb (48.6 MB)
+
+Export complete (9.26s)
+Results saved to [1m/home/ubuntu/data/repos/yolov5[0m
+Detect:          python detect.py --weights yolov5s6.pb
+PyTorch Hub:     model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5s6.pb')
+Validate:        python val.py --weights yolov5s6.pb
+Visualize:       https://netron.app
+YOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Loading yolov5s6.pb for TensorFlow GraphDef inference...
+Forcing --batch-size 1 square inference (1,3,1280,1280) for non-PyTorch models
+[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m[34m[1mval: [0mScanning '/home/ubuntu/data/repos/datasets/coco128/labels/train2017.cache' images and labels... 12[0m
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   0%|                         Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   2%|▏                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   3%|▎                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   5%|▍                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   6%|▋                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   8%|▊                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   9%|▉                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  11%|█                        Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  12%|█▎                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  14%|█▍                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  16%|█▌                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  17%|█▋                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  19%|█▉                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  20%|██                       Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  22%|██▏                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  23%|██▎                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  25%|██▌                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  27%|██▋                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  28%|██▊                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  30%|██▉                      Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  31%|███▏                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  33%|███▎                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  34%|███▍                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  36%|███▌                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  38%|███▊                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  39%|███▉                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  41%|████                     Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  42%|████▏                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  44%|████▍                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  45%|████▌                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  47%|████▋                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  48%|████▊                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  50%|█████                    Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  52%|█████▏                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  53%|█████▎                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  55%|█████▍                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  56%|█████▋                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  58%|█████▊                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  59%|█████▉                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  61%|██████                   Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  62%|██████▎                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  64%|██████▍                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  66%|██████▌                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  67%|██████▋                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  69%|██████▉                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  70%|███████                  Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  72%|███████▏                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  73%|███████▎                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  75%|███████▌                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  77%|███████▋                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  78%|███████▊                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  80%|███████▉                 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  81%|████████▏                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  83%|████████▎                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  84%|████████▍                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  86%|████████▌                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  88%|████████▊                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  89%|████████▉                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  91%|█████████                Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  92%|█████████▏               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  94%|█████████▍               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  95%|█████████▌               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  97%|█████████▋               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  98%|█████████▊               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████
+                 all        128        929       0.75      0.712      0.785      0.545
+Speed: 0.6ms pre-process, 52.5ms inference, 1.5ms NMS per image at shape (1, 3, 1280, 1280)
+Results saved to [1mruns/val/exp212[0m
+WARNING: Benchmark failure for TensorFlow Lite: TensorFlow Lite inference not supported on GPU
+WARNING: Benchmark failure for TensorFlow Edge TPU: Edge TPU not supported
+WARNING: Benchmark failure for TensorFlow.js: TF.js not supported
+
+
+[34m[1mbenchmarks: [0mweights=yolov5s6.pt, imgsz=1280, batch_size=1, data=/home/ubuntu/data/repos/yolov5/data/coco128.yaml, device=0, half=False, test=False, pt_only=False
+Checking setup...
+[2KYOLOv5 🚀 v6.1-177-g26a6b2a torch 1.10.1+cu113 CUDA:0 (NVIDIA RTX A6000, 48685MiB)
+
+Benchmarks complete (733.39s)
+                   Format  mAP@0.5:0.95  Inference time (ms)
+0                 PyTorch        0.5451                10.76
+1             TorchScript        0.5451                 8.58
+2                    ONNX        0.5451                25.69
+3                OpenVINO           NaN                  NaN
+4                TensorRT        0.5462                 2.76
+5                  CoreML           NaN                  NaN
+6   TensorFlow SavedModel        0.5454                54.05
+7     TensorFlow GraphDef        0.5454                52.48
+8         TensorFlow Lite           NaN                  NaN
+9     TensorFlow Edge TPU           NaN                  NaN
+10          TensorFlow.js           NaN                  NaN
+[2KSetup complete ✅ (14 CPUs, 98.2 GB RAM, 31.7/992.3 GB disk)
