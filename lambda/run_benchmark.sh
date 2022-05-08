@@ -1,7 +1,8 @@
 #!/bin/bash
 
 SYSTEM=${1:-"a6000"}
-TASK_NAME=${2:-"all"}
+DEVICE=${2:-"0"}
+TASK_NAME=${3:-"all"}
 
 declare -A TASKS=(
     [YOLOv5n]=yolov5n
@@ -31,11 +32,11 @@ declare -A IMGSZ=(
 
 
 main() {
-    FOLDER=./lambda/benchmarks/{SYSTEM}-$(date +"%m-%d-%y-%H-%M")
+    FOLDER=./lambda/benchmarks/${SYSTEM}-$(date +"%m-%d-%y-%H-%M")
     mkdir -p $FOLDER
     for task in "${!TASKS[@]}"; do
         if [[ "${task,,}" == *"$TASK_NAME"* ]] || [ "$TASK_NAME" == "all" ]; then
-            python ./utils/benchmarks.py --weights ${TASKS[${task}]}.pt --img ${IMGSZ[${task}]} --device 0 |& tee $FOLDER/${task}.txt
+            python ./utils/benchmarks.py --weights ${TASKS[${task}]}.pt --img ${IMGSZ[${task}]} --device ${DEVICE} |& tee $FOLDER/${task}.txt
         fi
     done
 }

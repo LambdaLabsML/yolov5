@@ -8,8 +8,8 @@ Pillow>=7.1.2
 PyYAML>=5.3.1
 requests>=2.23.0
 scipy>=1.4.1  # Google Colab version
-torch>=1.7.0
-torchvision>=0.8.1
+https://download.pytorch.org/whl/cu113/torch-1.10.1%2Bcu113-cp38-cp38-linux_x86_64.whl
+https://download.pytorch.org/whl/cu113/torchvision-0.11.2%2Bcu113-cp38-cp38-linux_x86_64.whl
 tqdm>=4.41.0
 
 # Logging -------------------------------------
@@ -21,17 +21,17 @@ pandas>=1.1.4
 seaborn>=0.11.0
 
 # Export --------------------------------------
-# coremltools>=4.1  # CoreML export
-# onnx>=1.9.0  # ONNX export
-# onnx-simplifier>=0.3.6  # ONNX simplifier
-# scikit-learn==0.19.2  # CoreML quantization
-# tensorflow>=2.4.1  # TFLite export
-# tensorflowjs>=3.9.0  # TF.js export
-# openvino-dev  # OpenVINO export
+coremltools>=4.1  # CoreML export
+onnx>=1.9.0  # ONNX export
+onnx-simplifier>=0.3.6  # ONNX simplifier
+scikit-learn==0.19.2  # CoreML quantization
+tensorflow>=2.4.1  # TFLite export
+tensorflowjs>=3.9.0  # TF.js export
+openvino-dev==2021.4.1  # OpenVINO export
 
 # Extras --------------------------------------
-# albumentations>=1.0.3
-# Cython  # for pycocotools https://github.com/cocodataset/cocoapi/issues/172
-# pycocotools>=2.0  # COCO mAP
-# roboflow
+albumentations>=1.0.3
+Cython  # for pycocotools https://github.com/cocodataset/cocoapi/issues/172
+pycocotools>=2.0  # COCO mAP
+roboflow
 thop  # FLOPs computation

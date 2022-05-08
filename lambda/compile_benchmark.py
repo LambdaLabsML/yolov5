@@ -7,6 +7,7 @@ import pandas as pd
 list_gpus = {
     'a6000': ('RTX A6000', 300, 5785),
     'rtx8000': ('RTX 8000', 260, 6900),
+    '3080': ('3080', 320, 1642),
 }
 
 list_benchmarks = {
@@ -67,8 +68,6 @@ def main():
     
     for folder in list_folders:
         gpu = folder.split('/')[-2].split('-')[0]
-        print(list_gpus[gpu][1])
-        print(list_gpus[gpu][2])
         df.at[list_gpus[gpu][0], 'watt'] = list_gpus[gpu][1]
         df.at[list_gpus[gpu][0], 'price'] = list_gpus[gpu][2]
     
@@ -79,7 +78,7 @@ def main():
                     if list_methods[args.method] in items:
                         t = items.split(' ')[-1]
                         throughput = 1000/float(t)
-                        df.at[list_gpus[gpu][0], benchmark] = throughput
+                        df.at[list_gpus[gpu][0], benchmark] = format(throughput, '.2f')
                         break
 
     df.to_csv(os.path.join(args.path, args.method + '.csv'))
