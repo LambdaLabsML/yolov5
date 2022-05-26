@@ -2,7 +2,7 @@ import argparse
 import os
 from glob import glob
 import pandas as pd
-
+import math
 
 list_gpus = {
     'a6000': ('RTX A6000', 300, 5785),
@@ -78,8 +78,13 @@ def main():
                     items = ' '.join(line.strip().split())
                     if list_methods[args.method] in items:
                         t = items.split(' ')[-1]
-                        throughput = 1000/float(t)
-                        df.at[list_gpus[gpu][0], benchmark] = format(throughput, '.2f')
+                        
+                        latency = float(t)
+                        
+                        if math.isnan(latency):
+                            latency = 0
+
+                        df.at[list_gpus[gpu][0], benchmark] = format(latency, '.2f')
                         break
 
     df.to_csv(os.path.join(args.path, args.method + '.csv'))
